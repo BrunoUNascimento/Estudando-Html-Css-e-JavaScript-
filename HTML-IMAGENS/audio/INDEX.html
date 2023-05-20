@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com audio</title>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <!--<audio src="EX/guanacast-33.mp3" controls autoplay></audio>-->
+    <!--você precisa ter outros formatos de arquivos para ser compativel com outros navegadores tambem tipo: mp3, wav, ogg-->
+    <audio preload="metadata" controls>
+        <source src="EX/guanacast-33.mp3" type="audio/mpeg" ><!--se não carregar esse formato, vai carregar o proximo-->
+        <source src="EX/guanacast-33.ogg" type="audio/ogg">
+        <source src="EX/guanacast-33.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="EX/guanacast-33.mp3">Clique aqui para fazer o dowload do arquivo</a></p>
+    </audio>
+</body>
+</html>
